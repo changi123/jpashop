@@ -1,32 +1,26 @@
 package jpabook.jpashop.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Member {
+public class DeliveryStatus {
 	@Id @GeneratedValue
-	@Column(name ="member_id")
+	@Column(name= "delivery_id")
 	private Long id;
 	
-	private String username;
+	private Order order;
 	
-	@Embedded
-	private Address address ;
+	@Embedded 
+	private Address address;
 	
-	
-	@OneToMany(mappedBy = "member")
-	private List<Order> oreders  = new ArrayList<>();
+//	@Enumerated(EnumType.ORDINAL)
+//	private deliver
 }
