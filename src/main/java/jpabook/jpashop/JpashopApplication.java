@@ -13,12 +13,6 @@ public class JpashopApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JpashopApplication.class, args);
 
-//		서비스에서 호출
-//		Member member = new Member();
-//		member.setUsername("memeberA");
-//		Long saveId = memberRepository.save(member);
-//		Member findMember = memberRepository.find(saveId);
-//		System.out.println(findMember.toString());
 	}
 
 }
