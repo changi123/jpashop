@@ -8,10 +8,7 @@ import jpabook.jpashop.repository.MemberRepository;
 
 @SpringBootApplication
 public class JpashopApplication {
-	
-	@Autowired
-	MemberRepository memberRepository;
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(JpashopApplication.class, args);
 
