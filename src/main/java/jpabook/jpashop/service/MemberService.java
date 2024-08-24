@@ -43,4 +43,11 @@ public class MemberService {
 		return memberRepo.findOne(memberId);		
 	}
 	
+	@Transactional
+	public void update(Long id, String name) {
+		Member member = memberRepo.findOne(id);
+		member.setName(name);
+		
+	}
+	
 }
